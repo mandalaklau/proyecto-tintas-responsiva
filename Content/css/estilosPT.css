@@ -1,0 +1,417 @@
+"*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:"Segoe UI",Arial,sans-serif;; 
+}
+
+
+body{
+	font-family: 'Open sans';
+	background-color: #FFFFFF;
+}
+header{
+    height: auto;
+    width: 100%;
+}
+
+header img{width: 100%;
+            }
+/*Estilos de cabezal codificado se usan ecaso de no utilizar la img cabezal*/
+.cabezal{
+    background-color: #87C556;
+    color: #FFFFFF;
+    font-family: verdana,sans-serif;
+    display: flex;
+    padding: 40px;
+    font-size: 95px
+}
+.cabezal h1{
+    font-size: 0.8em;
+}
+.cabezal h1 span{
+    font-size: 0.45em;
+}
+ .cabezal font {
+    font-size: 0.45em;
+    font-weight: lighter;
+    vertical-align: text-bottom;
+    padding: 47px 45px 0px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.arcoiris{
+    width: 100%;
+    height: 50px;
+    background: #123456;/*linear-gradient(left, #f00, #f80, #ff0, #0f0, #00f, #60f, #c0f); esto es para el arcoiris*/
+}
+/* FIN Estilos de cabezal codificado*/
+
+/*Estilos para  secciones de tablas*/
+#cuerpo{
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+}
+table td, table th{
+    padding: 5px 0px 5px 20px;
+    font-size:0.9em;
+}
+table a {
+    text-decoration: none;
+    color: #000;
+}
+table a:hover {
+    text-decoration: none;
+    color: #2FB3EA;
+}
+#cuerpo  table th{
+    letter-spacing:1px;
+    font-size:1.3em;
+}
+/*Estilos para tablas rotograbado*/
+
+.Rot1{
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+}
+.Rot1 .titth
+{
+    background-color:#69bd45;
+    color:#FFFFFF;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight:bold;
+        width: 40%;
+}
+
+.Rot1 .Subtitth{
+    background-color:#FFFFFF;
+    color:#87C557;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight:bold;
+}
+
+.Rot1 tbody tr:nth-child(odd) {
+    background-color: #D8EBCB;
+    color:#000000;
+}
+/* Estilos para tablas SERIGRAFIA*/
+.Ser{
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+}
+.Ser .titth
+{
+    background-color:#D02026;
+    color:#FFFFFF;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight:bold;
+        width: 40%;
+}
+
+.Ser .Subtitth{
+    background-color:#FFFFFF;
+    color:#D02026;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight:bold;
+}
+/* Estilos para tablas Quimica Varn*/
+.QuiV{
+    width: 95%;
+    margin: 50px auto;
+    text-align: left;
+}
+.QuiV .titth
+{
+    background-color:#25327B;
+    color:#FFFFFF;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight:bold;
+        width: 30%;
+}
+
+.QuiV .Subtitth{
+    background-color:#FFFFFF;
+    color:#00AEEF;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight:bold;
+}
+
+.QuiV tbody tr:nth-child(odd) {
+    background-color:#E4E6EF;
+    color:#000000;
+}
+
+.QuiV1{
+    width: 95%;
+    margin: 50px auto;
+    /*text-align: left;*/
+}
+.QuiV1 .titth
+{
+    background-color:#25327B;
+    color:#FFFFFF;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight:bold;
+        width: 30%;
+        text-align: left;
+}
+
+.QuiV1  .titvert  th{
+   /* background:transparent; 
+    writing-mode:tb-rl;
+    -webkit-transform: rotate(-90deg);   
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+    height: 140px;
+    border-bottom:1px dotted #333;
+    padding: 0px;*/
+}
+.QuiV1 .Subtitth1{
+    background:transparent; 
+    writing-mode:sideways-lr;
+    -webkit-transform: rotate(-90deg);   
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+  
+  border-bottom:1px dotted #333;
+    color:#00AEEF;
+    font-family: Arial;
+    font-size:.9em;
+    font-weight:bold;
+    padding: 0px;
+    text-align: left;
+
+}
+/*.QuiV1 .Subtitth2{
+    background:transparent; 
+    writing-mode:sideways-lr;
+    -webkit-transform: rotate(-90deg);   
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+  
+  border-bottom:1px dotted #333;
+    color:#00AEEF;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight:bold;
+    padding: 0px;
+    text-align: left;
+    height: 300px
+    
+}*/
+.QuiV1 tbody tr:nth-child(odd) {
+    background-color:#E4E6EF;
+    color:#000000;
+}
+.fa-circle{
+    color:#25327B;
+}
+/* FINEstilos para tablas SERIGRAFIA*/
+                /*/////////////MEDIA PARA TABLAS RESPONSIVAS GENERAL/////////////////////////////////*/
+@media screen and (max-width: 480px) {
+    table {
+        border:0;
+    }
+
+    table tr {
+        margin-bottom: 1px;
+        display: block;
+        border-bottom: 2px solid #777777;
+
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 0.7em;
+        border-bottom: 1px solid #ccc;
+        padding:5px 7px;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+ table thead tr:nth-child(1)  {
+        background-color: #FFFFFF;
+    }
+    table thead tr:nth-child(2)  {
+        display: none;
+    }
+
+}
+                /*//////////////////////////////////////////////*/
+
+/* FIN Estilos para tablas rotograbado*/
+
+
+.logofirma {
+    width: 100%;
+    height: 150px;
+}
+.logofirma img{
+    float: right;
+    margin:15px 80px;
+}
+.conten{
+	    margin: 0 auto;
+	    color: #333333;
+	    margin-top:5%;
+	    width: 85%;
+	    height: 100%
+	    }
+
+.conten li {
+    line-height: 1.9;
+}
+
+.conten img{width: 100%;}
+
+footer{
+	background-color:#34495E;
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 12px;
+	position:relative;
+    bottom: 0;
+    z-index: -9;
+}
+.boxfooter {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+}
+.boxfooter div {
+    padding-left: 9%;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.boxfooter div li {
+    font-size: 10px;
+    font-weight: lighter;
+        color: #8c8c8c;
+        letter-spacing: 0px;
+         padding-top: 5px;
+}
+
+
+@media screen and (max-width:550px) {
+
+   #cuerpo{
+    width: 100%;
+    min-height: 500px;
+    font-size: 13px;
+} 
+  footer{
+background-color:#34495E;
+color: #FFFFFF;
+width: 100%;
+font-size: 14px;
+position:relative;
+   bottom: 0;
+   z-index: -9;
+}
+footer a{
+   text-decoration: none;
+   color: #FFFFFF;
+}
+.boxfooter {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+   padding: 15px;
+   position: relative;
+}
+.boxfooter div {
+   padding-left: 9%;
+   width: 100%;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 14px;
+}
+.boxfooter div li a{
+   font-size: .9em;
+   font-weight: lighter;
+   color: #8c8c8c;
+   letter-spacing: 0px;
+   padding-top: 5px;
+   text-decoration: none;
+   line-height: 2;
+   cursor: pointer;
+}
+.boxfooter div li a:hover{
+   color:#ffffff;
+}
+footer ul .submenu li a{
+   display: block;
+   padding-left: 5px;
+}
+
+@media screen and (max-width:550px) {
+
+  #cuerpo{
+   width: 100%;
+   min-height: 500px;
+   font-size: 13px;
+} 
+ footer{
+background-color:#34495E;
+color: #FFFFFF;
+width: 100%;
+font-size: 12px;
+position:relative;
+   bottom: 0;
+   z-index: -9;
+}
+.boxfooter {
+    width: 90%;
+   display: block;
+   
+   padding: 15px;
+}
+.boxfooter div {
+   padding-left: 9%;
+   width: 100%;
+   
+   font-size: 14px;
+   font-weight: bold;
+   letter-spacing: 2px;
+   padding:10px;
+   border-bottom: 1px solid #8c8c8c;
+}
+.boxfooter div li {
+   font-size: 10px;
+   font-weight: lighter;
+   color: #8c8c8c;
+   letter-spacing: 0px;
+    padding-top: 5px;
+}
+
+
+}
