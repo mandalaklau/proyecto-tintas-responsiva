@@ -1,14 +1,14 @@
 "*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family:"Segoe UI",Arial,sans-serif;; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial,sans-serif;
 }
 
 
 body{
-	font-family: 'Open sans';
-	background-color: #FFFFFF;
+ 
+  background-color: #FFFFFF;
 }
 header{
     height: auto;
@@ -17,6 +17,10 @@ header{
 
 header img{width: 100%;
             }
+
+div#pleca {
+    margin: 15px 0px;
+}
 /*Estilos de cabezal codificado se usan ecaso de no utilizar la img cabezal*/
 .cabezal{
     background-color: #87C556;
@@ -46,6 +50,12 @@ header img{width: 100%;
     background: #123456;/*linear-gradient(left, #f00, #f80, #ff0, #0f0, #00f, #60f, #c0f); esto es para el arcoiris*/
 }
 /* FIN Estilos de cabezal codificado*/
+
+/*Estilos para Suajadoras*/
+.Presentacion .container img {
+    width: 100% !important;
+}
+/*FINEstilos para Suajadoras*/
 
 /*Estilos para  secciones de tablas*/
 #cuerpo{
@@ -111,7 +121,7 @@ table a:hover {
     font-family: Arial;
     font-size: 14pt;
     font-weight:bold;
-        width: 40%;
+    width:20%;
 }
 
 .Ser .Subtitth{
@@ -121,7 +131,17 @@ table a:hover {
     font-size: 12pt;
     font-weight:bold;
 }
+
+.Ser tbody tr:nth-child(odd) {
+    background-color:#FCD6D8;
+    color:#000000;
+}
+
 /* Estilos para tablas Quimica Varn*/
+img.tablaQ {
+    width: 98%;
+    margin: 25px 12px;
+}
 .QuiV{
     width: 95%;
     margin: 50px auto;
@@ -150,79 +170,90 @@ table a:hover {
     color:#000000;
 }
 
-.QuiV1{
-    width: 95%;
-    margin: 50px auto;
-    /*text-align: left;*/
+.fa-circle{
+    color:#25327B;
 }
-.QuiV1 .titth
+
+.QuiVB{
+    width:60%;
+    margin: 50px;
+    text-align: left;
+    line-height: 2.3;
+    font-size: .9em;
+}
+.QuiVB .titth
 {
     background-color:#25327B;
     color:#FFFFFF;
     font-family: Arial;
     font-size: 14pt;
     font-weight:bold;
-        width: 30%;
-        text-align: left;
+    width: 30%;
+    line-height:1;
+}
+.QuiVB span {
+    color: #25327B;
+    font-weight:bold;
 }
 
-.QuiV1  .titvert  th{
-   /* background:transparent; 
-    writing-mode:tb-rl;
-    -webkit-transform: rotate(-90deg);   
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); 
-    height: 140px;
-    border-bottom:1px dotted #333;
-    padding: 0px;*/
-}
-.QuiV1 .Subtitth1{
-    background:transparent; 
-    writing-mode:sideways-lr;
-    -webkit-transform: rotate(-90deg);   
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); 
-  
-  border-bottom:1px dotted #333;
-    color:#00AEEF;
-    font-family: Arial;
-    font-size:.9em;
-    font-weight:bold;
-    padding: 0px;
+@media screen and (max-width: 480px) {
+.QuiVB{
+    width:100%;
+    margin: 5px;
     text-align: left;
+    line-height: 2.3;
+    font-size: .9em;
+    padding: 10px
+}
+}
 
-}
-/*.QuiV1 .Subtitth2{
-    background:transparent; 
-    writing-mode:sideways-lr;
-    -webkit-transform: rotate(-90deg);   
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg); 
-  
-  border-bottom:1px dotted #333;
-    color:#00AEEF;
-    font-family: Arial;
-    font-size: 12pt;
-    font-weight:bold;
-    padding: 0px;
+.QuiVR{
+    width:90%;
+    margin: 50px;
     text-align: left;
-    height: 300px
-    
-}*/
-.QuiV1 tbody tr:nth-child(odd) {
+    line-height: 2.3;
+    font-size: .9em;
+}
+.QuiVR .titth
+{
+    background-color:#25327B;
+    color:#FFFFFF;
+    font-family: Arial;
+    font-size: 14pt;
+    font-weight:bold;
+    width: 30%;
+    line-height:1;
+}
+.QuiVR tbody tr:nth-child(odd) {
     background-color:#E4E6EF;
     color:#000000;
 }
-.fa-circle{
-    color:#25327B;
+.QuiVR ol {
+        padding: 15px 30px 15px 70px;
 }
-/* FINEstilos para tablas SERIGRAFIA*/
+.QuiVR span {
+    color: #25327B;
+    font-size: 1.1em;
+    font-weight:bold;
+}
+
+@media screen and (max-width: 480px) {
+.QuiVR{
+    width:100%;
+    margin: 5px;
+    text-align: left;
+    line-height: 2.3;
+    font-size: .9em;
+    padding: 10px
+}
+.QuiVR ol {
+   padding: 15px;
+   text-align: justify;
+}
+}
+
+
+/* FIN Estilos para tablas Quimica Varn*/
                 /*/////////////MEDIA PARA TABLAS RESPONSIVAS GENERAL/////////////////////////////////*/
 @media screen and (max-width: 480px) {
     table {
@@ -276,12 +307,12 @@ table a:hover {
     margin:15px 80px;
 }
 .conten{
-	    margin: 0 auto;
-	    color: #333333;
-	    margin-top:5%;
-	    width: 85%;
-	    height: 100%
-	    }
+      margin: 0 auto;
+      color: #333333;
+      margin-top:5%;
+      width: 85%;
+      height: 100%
+      }
 
 .conten li {
     line-height: 1.9;
@@ -290,13 +321,17 @@ table a:hover {
 .conten img{width: 100%;}
 
 footer{
-	background-color:#34495E;
-	color: #FFFFFF;
-	width: 100%;
-	font-size: 12px;
-	position:relative;
+  background-color:#34495E;
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 14px;
+  position:relative;
     bottom: 0;
-    z-index: -9;
+   z-index: 9000;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .boxfooter {
     width: 90%;
@@ -312,106 +347,241 @@ footer{
     letter-spacing: 2px;
     font-size: 14px;
 }
-.boxfooter div li {
-    font-size: 10px;
+.boxfooter ul {
+    list-style: none;
+}
+.boxfooter div li a{
+    font-size: .9em;
     font-weight: lighter;
-        color: #8c8c8c;
-        letter-spacing: 0px;
-         padding-top: 5px;
+    color: #8c8c8c;
+    letter-spacing: 0px;
+    padding-top: 5px;
+    text-decoration: none;
+    line-height: 2;
+    cursor: pointer;
+}
+div li a.boxfooter :hover{
+    color:#ffffff;
+}
+footer ul .submenu li a{
+    display: block;
+    padding-left: 25px;
 }
 
+@media screen and (max-width:900px) {
+    div#pleca {
+        margin: 15px 0px 0px 0px;
+    }
+    #pleca img.estiloMano {
+        width: 19em;
+        display: flex;
+    }
+    header img {
+        width: 100%;
+        margin: -20px 0px;
+    }
+.nav{
+        padding: 27px 17px;
+    }
+}
 
+@media screen and (max-width:770px) {
+    div#pleca {
+        margin: 15px 0px 0px 0px;
+    }
+    #pleca img.estiloMano {
+        width: 19em;
+        display: flex;
+    }
+    header img {
+        width: 100%;
+        margin: -20px 0px;
+    }
+.nav{
+      padding: 27px 17px !important;
+    }
+}
 @media screen and (max-width:550px) {
-
-   #cuerpo{
+div#pleca {
+    margin: 15px 0px 0px 0px;
+}
+#pleca img.estiloMano {
+    width: 80%;
+    display: flex;
+}
+header img {
+    width: 100%;
+    margin: -20px 0px;
+}
+#cuerpo{
     width: 100%;
     min-height: 500px;
     font-size: 13px;
 } 
   footer{
-background-color:#34495E;
-color: #FFFFFF;
-width: 100%;
-font-size: 14px;
-position:relative;
-   bottom: 0;
-   z-index: -9;
-}
-footer a{
-   text-decoration: none;
-   color: #FFFFFF;
+  background-color:#34495E;
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 12px;
+  position:relative;
+    bottom: 0;
+    z-index: -9;
 }
 .boxfooter {
-   width: 90%;
-   display: flex;
-   margin: 0 auto;
-   padding: 15px;
-   position: relative;
+     width: 90%;
+    display: block;
+    
+    padding: 15px;
 }
 .boxfooter div {
-   padding-left: 9%;
-   width: 100%;
-   font-weight: bold;
-   letter-spacing: 2px;
-   font-size: 14px;
-}
-.boxfooter div li a{
-   font-size: .9em;
-   font-weight: lighter;
-   color: #8c8c8c;
-   letter-spacing: 0px;
-   padding-top: 5px;
-   text-decoration: none;
-   line-height: 2;
-   cursor: pointer;
-}
-.boxfooter div li a:hover{
-   color:#ffffff;
-}
-footer ul .submenu li a{
-   display: block;
-   padding-left: 5px;
-}
-
-@media screen and (max-width:550px) {
-
-  #cuerpo{
-   width: 100%;
-   min-height: 500px;
-   font-size: 13px;
-} 
- footer{
-background-color:#34495E;
-color: #FFFFFF;
-width: 100%;
-font-size: 12px;
-position:relative;
-   bottom: 0;
-   z-index: -9;
-}
-.boxfooter {
-    width: 90%;
-   display: block;
-   
-   padding: 15px;
-}
-.boxfooter div {
-   padding-left: 9%;
-   width: 100%;
-   
-   font-size: 14px;
-   font-weight: bold;
-   letter-spacing: 2px;
-   padding:10px;
-   border-bottom: 1px solid #8c8c8c;
+    padding-left: 9%;
+    width: 100%;
+    
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding:10px;
+    border-bottom: 1px solid #8c8c8c;
 }
 .boxfooter div li {
-   font-size: 10px;
-   font-weight: lighter;
-   color: #8c8c8c;
-   letter-spacing: 0px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #8c8c8c;
+    letter-spacing: 0px; 
+     padding-top: 5px;
+}
+
+}
+@media screen and (max-width:300px) {
+div#pleca {
+    margin: 15px 0px 0px 0px;
+}
+
+#pleca img.estiloMano {
+    width: 80%;
+    display: flex;
+}
+header img {
+    width: 100%;
+    margin: -20px 0px;
+}
+#cuerpo{
+    width: 100%;
+    min-height: 500px;
+    font-size: 13px;
+}
+.logofirma img {
+    float: right;
+    margin: 15px 20px;
+    width: 80%;
+}
+
+
+  footer{
+  background-color:#34495E;
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 12px;
+  position:relative;
+  bottom: 0;
+  z-index: -9;
+}
+.boxfooter {
+     width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+.boxfooter div {
+    padding-left: 10%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    padding:10px;
+    border-bottom: 1px solid #8c8c8c;
+}
+.boxfooter div li {
+    font-size: 10px;
+    font-weight: lighter;
+    color: #8c8c8c;
     padding-top: 5px;
 }
 
+}
+
+/* Ocultamos la sección de resultados del buscador google que son patrocinados*/
+.gsc-adBlock{ 
+        display: none !important; 
+} 
+
+.gcsc-branding-text,.gcsc-branding-img-noclear,.gcsc-branding-text .gcsc-branding-text-name{ 
+        display:none; 
+} 
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 15px;
+    width: 255px;
+}
+
+input#gsc-i-id1 {
+    background: transparent !important;
+    text-indent: 0px !important;
+    margin: 0.0625em 0em 0em 0.5em !important;
+}
+
+/*edicion de estilos para el buscador*/
+div#___gcse_0 {
+    width: 25% !important;
+    float: right !important;
+}
+#___gcse_0 table tr {
+    display: flex;
+}
+table.gsc-search-box tr td {
+    border: 0px none !important;
+    padding: 0;
+}
+input.gsc-search-button.gsc-search-button-v2 {
+    content: "\f002" !important;
+    background: dodgerblue !important;
+    border: 1px !important;
+    width: 23px !important;
+    height: 23px !important;
+    padding: 5px;
+}
+@media screen and (max-width:997px) {
+div#___gcse_0 {
+    width: 47% !important;
+    float: right !important;
+}
+}
+@media screen and (max-width:550px) {
+div#___gcse_0 {
+    width: 100% !important;
+    float: right !important;
+}
+
+table.gsc-search-box tr {
+    border: 0px none !important;
+            
+}
+table.gsc-search-box td {
+    display:inline-grid !important;
+}
 
 }
+@media screen and (max-width:480px) {
+div#___gcse_0 {
+    width: 100% !important;
+    float: right !important;
+}
+
+table.gsc-search-box tr {
+    border: 0px none !important;
+}
+table.gsc-search-box td {
+    display:inline-grid !important;
+}
+}
+/* Fin estilos google*/
+

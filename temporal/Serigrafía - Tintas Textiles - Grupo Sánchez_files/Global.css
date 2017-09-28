@@ -99,22 +99,18 @@ h2, h3, h4
     /*height: 300px;*/
 }
 
-
-div#divLogoGSHeader {
-    width: 15%;
+#divLogoGSHeader
+{
+    width: 30%;
+    height: 55px;
     float: left;
+    text-align:center;
 }
 
-div#divMenuSuperior {
-    width: 38%;
-    float: right;
-    padding-top: 20px;
-}
-@media only screen and (min-width: 768px){
-div#divMenuSuperior {
-    width: 45%;
-    float: right;
-       padding: 20px 0px 60px 0px;
+#divLogoGSHeader img
+{
+    width: 100%;
+    max-width: 297px;
 }
 
 #divMenuSuperior

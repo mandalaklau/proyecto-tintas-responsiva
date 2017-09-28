@@ -4,28 +4,26 @@
 	box-sizing: border-box;
 }
 
-body{
-	font-family: 'Open sans';
-	
+
+.nav{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	top: 0;
+	left: 0;
+
+	padding: 20px;
+	background: transparent;
 }
 
-.navegador{
-width: 100%;
-height: 60px;
-top: 0;
-left: 0;
-padding: 20px;
-background: url(../img/LogoGS.png)10px 10px no-repeat #FFFFFF;
-position: relative; /*Con opcion a stiky probar funcionalidad en Chrome*/
-}
-
-
-
-.navegador #button-menu{
+.nav #button-menu{
 	font-size: 30px;
 	color: #34495E;
 	cursor: pointer;
-    float: right;
+	 float: right;
+}
+nav.navegacion {
+    background: transparent !important;
 }
 
 .navegacion{
@@ -69,7 +67,6 @@ position: relative; /*Con opcion a stiky probar funcionalidad en Chrome*/
 	text-decoration: none;
 	color: #575D69;
 }
-
 
 .navegacion .menu a:hover{
 	background: #798DA3;
@@ -144,14 +141,9 @@ position: relative; /*Con opcion a stiky probar funcionalidad en Chrome*/
 }
 
 @media screen and (max-width: 320px){
-	
 	.navegacion ul{
 		width: 100%;
 	}
-	.navegacion .menu a:hover{
-	background: #798DA3;
-	color: #fff;
-}
 }
 
 /* Agregando simbolo > para el submenu*/
