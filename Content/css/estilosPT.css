@@ -21,6 +21,12 @@ header img{width: 100%;
 div#pleca {
     margin: 15px 0px;
 }
+
+.container {
+    z-index: -900;
+    position: relative;
+	padding:20px 5px;
+}
 /*Estilos de cabezal codificado se usan ecaso de no utilizar la img cabezal*/
 .cabezal{
     background-color: #87C556;
@@ -52,9 +58,21 @@ div#pleca {
 /* FIN Estilos de cabezal codificado*/
 
 /*Estilos para Suajadoras*/
-.Presentacion .container img {
+
+
+.container img {
     width: 100% !important;
+	  padding-bottom: 30px;
+	
 }
+@media screen and (max-width: 765px) and (min-width:200px) {
+    a .prev {
+
+        background: url('../Global_Imgs/FlechaAnterior.png') no-repeat !important;
+        }
+    
+    }
+
 /*FINEstilos para Suajadoras*/
 
 /*Estilos para  secciones de tablas*/
@@ -419,14 +437,15 @@ header img {
     font-size: 13px;
 } 
   footer{
-  background-color:#34495E;
-  color: #FFFFFF;
-  width: 100%;
-  font-size: 12px;
-  position:relative;
+  	background-color:#34495E;
+  	color: #FFFFFF;
+  	width: 100%;
+  	font-size: 12px;
+  	position:relative;
     bottom: 0;
     z-index: -9;
-}
+	padding-bottom:30px;
+	}
 .boxfooter {
      width: 90%;
     display: block;

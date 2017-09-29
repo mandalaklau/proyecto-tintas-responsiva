@@ -99,18 +99,22 @@ h2, h3, h4
     /*height: 300px;*/
 }
 
-#divLogoGSHeader
-{
-    width: 30%;
-    height: 55px;
+
+div#divLogoGSHeader {
+    width: 15%;
     float: left;
-    text-align:center;
 }
 
-#divLogoGSHeader img
-{
-    width: 100%;
-    max-width: 297px;
+div#divMenuSuperior {
+    width: 38%;
+    float: right;
+    padding-top: 20px;
+}
+@media only screen and (min-width: 768px){
+div#divMenuSuperior {
+    width: 45%;
+    float: right;
+       padding: 20px 0px 60px 0px;
 }
 
 #divMenuSuperior
@@ -371,14 +375,14 @@ ul.parrafo.numeros
 
 .container {
   /*max-width: 100%;*/
-  background-color: black;
+  background-color: transparent;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
 .container div {
 	z-index:-10;
-  background-color: white;
+  background-color: transparent;
   width: 100%;
   /*display: inline-block;*/
   display: none;
