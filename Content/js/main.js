@@ -48,7 +48,24 @@ $(document).ready(function(){
 	$('.navegacion .subsubmenu li.go-back').click(function(){
 
 		$(this).parent().css({'left':'-320px'}); // Ocultamos el sub-submenu
-
 	});
-
 });
+
+
+function open_search(elemnent) {
+
+  var a = document.getElementById("google_search_bar");
+  
+  if (a.style.visibility == "visible") {
+    a.style.visibility = "hidden";
+	elemnent.innerHTML = "<i class='fa fa-search'></i>";    
+  } else {
+    a.style.visibility = "visible";  
+	
+    if (document.getElementById("gsc-i-id1")) {
+		document.getElementById("gsc-i-id1").focus(); 
+	}
+    elemnent.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
+  }
+}
+
