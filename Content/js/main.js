@@ -49,23 +49,52 @@ $(document).ready(function(){
 
 		$(this).parent().css({'left':'-320px'}); // Ocultamos el sub-submenu
 	});
+
+	
+	
 });
 
 
-function open_search(elemnent) {
+/* Se mostrará buscador de google hasta que se cargue toda la página*/
+$(window).on('load', function () {
+	
+	//OCULTANDO BOTON DE BUSQUEDA DE GOOGLE
+	$('.gsc-search-button').hide();
+	$("#lupa").css("visibility", "visible");
+	
+	$('#gsc-i-id1').keyup(function(e){
+		if(e.keyCode == 13)
+		{
+			$(".gsc-search-button input").click();
+		}
+	});
+	
+	$('#gsc-i-id1').blur(function() {
+		if($('.gsc-results-wrapper-visible').length){
+			
+		}else{
+						
+			$("#lupa").css("visibility", "visible");
+			$("#lupa a").html("<i class='fa fa-search'></i>");
+			var a = document.getElementById("google_search_bar");
+			a.style.display = "none";  
+			$('#gsc-i-id1').val('');
+		}
+	});
+});
 
+/*Funcionalidad de ocultar y mostrar el buscador por Focus */
+function open_search(elemen) {
   var a = document.getElementById("google_search_bar");
   
-  if (a.style.visibility == "visible") {
-    a.style.visibility = "hidden";
-	elemnent.innerHTML = "<i class='fa fa-search'></i>";    
-  } else {
-    a.style.visibility = "visible";  
-	
-    if (document.getElementById("gsc-i-id1")) {
-		document.getElementById("gsc-i-id1").focus(); 
-	}
-    elemnent.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
+  if(a.style.display == "none") {
+    $("#google_search_bar").css('opacity','0');
+	$("#google_search_bar").show().animate({opacity:1},1000); 
+	$("#gsc-i-id1").focus(); 
+	$("#lupa").css("visibility", "hidden");
+  }else {
+    a.style.display = "none";  
+	elemen.innerHTML = "<i class='fa fa-search'></i>";    
   }
 }
 

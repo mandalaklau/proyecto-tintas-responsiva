@@ -112,11 +112,13 @@ div#divMenuSuperior {
 }
 @media only screen and (min-width: 768px){
 div#divMenuSuperior {
-    width: 45%;
+        width: 53%;
     float: right;
-       padding: 20px 0px 60px 0px;
+    padding: 27px 0px 20px 0px;
 }
-
+div#divMenuSuperior div {
+    padding: 0px 20px;
+}
 #divMenuSuperior
 {
     width: 60%;
@@ -373,7 +375,7 @@ ul.parrafo.numeros
 }
 */
 
-.container {y
+/*.container {y
   /*max-width: 100%;*/
   background-color:transparent;
   margin: 0 auto;
@@ -384,13 +386,13 @@ ul.parrafo.numeros
 	z-index:-10;
   background-color:transparent;
   width: 100%;
-  /*display: inline-block;*/
+  display: inline-block;
   display: none;
 }
 .container img {
   width: 100%;
   height: auto;
-}
+}*/
 
 button {
   position: absolute;
@@ -414,7 +416,7 @@ button {
 {
     position:relative;
 }
-.prev, .next
+/*.prev, .next
 {
     display: block;
     height: 100px;
@@ -445,7 +447,7 @@ button {
 .next:hover
 {
     background-position: 2px 0px;
-}
+}*/
 
 /*++++++++++++++++++++++++++++++++++++++++ MANTILLAS DAY ++++++++++++++++++++++++++++++++++++++++++*/
 .MantillasDay
