@@ -19,10 +19,10 @@ header img{width: 100%;
             }
 
 
-.container {
+.container{
     position: relative;
     padding: 0px !important;
-    margin: 30px 0px 40px;
+   
 }
    .container img {
     width: 100%;
@@ -38,7 +38,7 @@ header img{width: 100%;
 
 .prev
 {
-    background: url('../Global_imgs/FlechaAnterior.png') no-repeat;
+       background: url(../Global_imgs/FlechaAnterior.png) no-repeat ;
     background-position: 0 0;
     left: 5px;
 }
@@ -50,7 +50,7 @@ header img{width: 100%;
 
 .next
 {
-    background: url('../Global_imgs/FlechaSiguiente.png') no-repeat;
+    background: url('../Global_imgs/FlechaSiguiente.png') no-repeat ;
     background-position: 0 0;
     right: 0;
 }
@@ -64,6 +64,10 @@ header img{width: 100%;
   and (orientation: portrait) {
     .prev, .next {
         top: 22%;
+		background-size:78%;
+        }
+		.prev, .next a{
+		background-size:78%;
         }
 }
 
@@ -147,6 +151,24 @@ table a:hover {
     background-color: #D8EBCB;
     color:#000000;
 }
+
+.Rot1 a.InfoCatLink {
+    font-weight: bold;
+	color:#333;
+}
+.Rot1 a.InfoCatLink:hover {
+    font-weight: bold;
+    color:#409002;
+}
+.Rot1 a.InfoCatLink:after {
+    font-family: FontAwesome;
+    content: "\f105";
+	padding:5px;
+}
+
+.Rot1 [data-label="Línea"]{
+    color: #409002;;
+}
 /* Estilos para tablas SERIGRAFIA*/
 .Ser{
     width: 80%;
@@ -176,11 +198,29 @@ table a:hover {
     color:#000000;
 }
 
+.Ser a.InfoCatLink {
+    font-weight: bold;
+	color:#333;
+}
+.Ser a.InfoCatLink:hover {
+    font-weight: bold;
+    color:#b30505;
+}
+.Ser a.InfoCatLink:after {
+    font-family: FontAwesome;
+    content: "\f105";
+	padding:5px;
+}
+
+.Ser [data-label="Descripción"]{
+    color:#b30505;
+}
 /* Estilos para tablas Quimica Varn*/
 img.tablaQ {
-    width: 94%;
-    margin: 25px 12px;
+    width: 99%;
+    margin: 25px 8px;
 }
+
 .QuiV{
     width: 95%;
     margin: 50px auto;
@@ -234,6 +274,25 @@ img.tablaQ {
     color: #25327B;
     font-weight:bold;
 }
+.QuiV a.InfoCatLink {
+    font-weight: bold;
+	color:#333;
+}
+.QuiV a.InfoCatLink:hover {
+    font-weight: bold;
+        color: #053bb3;
+
+}
+.QuiV a.InfoCatLink:after {
+    font-family: FontAwesome;
+    content: "\f105";
+	padding:5px;
+}
+
+.QuiV [data-label="Descripción"]{
+        color: #053bb3;
+
+}
 
 @media screen and (max-width: 480px) {
 .QuiVB{
@@ -244,10 +303,14 @@ img.tablaQ {
     font-size: .9em;
     padding: 10px
 }
+img.tablaQ {
+    width: 90%;
+    margin: 25px 18px;
+}
 }
 
 .QuiVR{
-    width:90%;
+    width:75%;
     margin: 50px;
     text-align: left;
     line-height: 2.3;
@@ -388,7 +451,7 @@ footer{
     text-align: left !important;
     }
 footer.w3-row.boxfooter {
-    position: fixed;
+    position: relative;
     bottom: 0px;
 }
 footer.w3-row.boxfooter div {
@@ -417,13 +480,37 @@ footer.w3-row.boxfooter div {
     width: 80%;
 }
 }
-#pleca{
-    width: 100%
-}
-#pleca img {
+.estiloMano {
+    cursor: hand;
+    cursor: pointer;
     padding-top: 12px;
 }
-*/
+
+div#divMenuSuperior {
+				width:50% !important;
+				    padding-top: 30px;
+				}
+				
+
+@media screen and (max-width:1104px) {	
+div#divGlobalContent {
+    margin-top: 50px;
+}			
+	div#divMenuSuperior {
+			width:60% !important;
+			float: right;
+			padding-top: 30px;
+		}
+		div#divMenuSuperior div {
+			padding: 0px 10px;
+			}
+	header {
+    margin-top: 47px;
+	}
+	/*.buscador{
+		top:55px;
+	}*/
+}
 /* Ocultamos la sección de resultados del buscador google que son patrocinados*/
 .gsc-adBlock{ 
         display: none !important; 
@@ -433,34 +520,6 @@ footer.w3-row.boxfooter div {
         display:none; 
 } 
 
-.gsc-search-box-tools .gsc-search-box .gsc-input {
-    padding-right: 15px;
-    width: 255px;
-}
-
-
-.gsc-control-cse.gsc-control-cse-es {
-    background-color: transparent !important;
-    border: 0px transparent !important;
-    padding: 30px 0px;
-    float: left;
-}
-
-input#gsc-i-id1 {
-    background: transparent !important;
-    text-indent: 0px !important;
-    margin: 0.0625em 0em 0em 0.5em !important;
-}
-
-.Lupa {
-    width: 35px;
-    float: right;
-    position: relative;
-    margin: 16px 20px 0px 0px;
-    height: 35px;
-    color: #b1b1b1;
-    font-size: 1.7em;
-}
 td.gsc-search-button {
     display: none;
 }
@@ -468,93 +527,104 @@ td.gsc-search-button {
 td.gsib_b {
     display: none;
 }
-/*edicion de estilos para el buscador*/
-div#___gcse_0 {
-    width: 20% !important;
-    float: right !important;
+
+form .gsc-search-box.gsc-search-box-tools{
+  	display:none;
 }
-#___gcse_0 table tr {
-    display: flex;
+.gsc-results-wrapper-overlay.gsc-results-wrapper-visible table tr {
+    border: 0px;
 }
-table.gsc-search-box tr td {
-    border: 0px none !important;
-    padding: 0;
+.gsc-results-wrapper-overlay.gsc-results-wrapper-visible table td {
+    border: 0px;
 }
-input.gsc-search-button.gsc-search-button-v2 {
-    content: "\f002" !important;
-    background: dodgerblue !important;
-    border: 1px !important;
-    width: 23px !important;
-    height: 23px !important;
-    padding: 5px;
-}
-@media screen and (max-width:997px) {
-div#___gcse_0 {
-    width: 47% !important;
-    float: right !important;
-}
-}
-@media screen and (max-width:550px) {
-div#___gcse_0 {
-    width: 100% !important;
-    float: right !important;
+.buscador {
+  display:block;
+  margin: 0 0 0 auto;
+  width: 20px;
+  box-sizing: border-box;
+  border:0px;
+  border-radius: 4px;
+  font-size: 16px;
+ background-color: white;
+  background-image: url('../img/lupa azul.png');
+  background-size:30px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10000;
 }
 
-table.gsc-search-box tr {
-    border: 0px none !important;
-            
+.lupagris{
+  background-image: url('../img/lupa.png');
+  background-size:30px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
 }
-table.gsc-search-box td {
-    display:inline-grid !important;
-}
-
-}
-@media screen and (max-width:480px) {
-div#___gcse_0 {
-    width: 100% !important;
-    float: right !important;
+.buscador:focus {
+  width: 25%;
 }
 
-table.gsc-search-box tr {
-    border: 0px none !important;
+@media only screen and (min-width: 768px){
+div#divMenuSuperior div {
+    padding: 0px 30px;
+	}
+	
 }
-table.gsc-search-box td {
-    display:inline-grid !important;
+@media screen and (max-width:980px) {
+	.buscador {
+		display:block;
+		margin: 0 0 0 auto;
+		padding: 10px 20px 8px 24px;
+		position: absolute;
+		right: 15px;
+		top:60px;
+		  z-index: 10000;}
+		
+		.buscador:focus {
+			width: 95%;
+			padding-left: 40px;
+			}
+		
 }
-}
-
-
 /* Fin estilos google*/
+
+
+
+
+@media screen and (max-width:768px){
+	.container{
+		margin-top: 70px;
+	}
+	div#divLogoGSHeader img {
+    width: 82%;
+	}
+	
+}
 
 @media screen and (max-width:480px) {
 
     .container {
     position: relative;
     padding: 0px !important;
-    margin: 50px 0px 40px;
+    margin: 30px 0px 40px;
     }
     footer.w3-row.boxfooter div {
     display: flex;
     margin: 6px;
 }
     .w3-container, .w3-panel {
-    /* padding: 0.01em 16px; */
+     padding:  0px !important;
     }
-    .Lupa {
-    float: right;
-    position: absolute;
-    right: -11px;
-    top: 45px;
-    }
-    div#___gcse_0 {
-    width: 91% !important;
-    float: right !important;
-        height: 30px;
-}
-    .gsc-control-cse.gsc-control-cse-es {
-    background-color: transparent !important;
-    border: 0px transparent !important;
-    padding: 10px 0px 0px 0px;
-    float: left;
-}
+	
+	#pleca img {
+    padding-top: 12px;
+    width: 85%;
+	}
+
 }

@@ -105,17 +105,15 @@ if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de tr
 
 <!--div id="divGlobal">
 <div id="divGlobalHeader"-->
-<div id="pleca">
+
 	<div class="w3-container" id="divLogoGSHeader">
 		<img src="./Tintas para impresión_files/GS_297x54.png" alt="Grupo Sánchez" class="estiloMano" onclick="window.open(&#39;~/es/Home.aspx&#39;,&#39;_self&#39;)" title="Grupo Sánchez">
 	</div>
 	 
         
-	<!-- Buscador -->
 	
-	<div id="google_search_bar" style="display:none" ><gcse:search ></gcse:search></div> 
-	<div id="lupa" class="Lupa" style="visibility:hidden"><a onclick="open_search(this)"><li class="fa fa-search" ></li></a></div>
-	<!-- Buscador -->
+
+	<!-- MENU -->
 	<div class="no-print w3-container" id="divMenuSuperior">
 		<div class="w3-hide-small w3-hide-medium">
 	                    <div id="ctl00_RMTintasyMateriales" class="RadMenu RadMenu_Default MenuByEACA1" style="font-family: Arial; z-index: 7000;">
@@ -203,7 +201,8 @@ if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de tr
 	</div>
 
 	</div>                 
-</div>	<!-- INICIO MENU RESPONSIVE --><!-- INICIO MENU RESPONSIVE --> 
+	
+<!-- INICIO MENU RESPONSIVE --><!-- INICIO MENU RESPONSIVE --> 
 	    <div class="w3-bar w3-hide-large">   
 	    	<div class="w3-block w3-mobile">
 	    		<div class="nav">
@@ -476,6 +475,8 @@ if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de tr
     </script>
 
         </div>
+
+	
 	<!-- Inicia  Footer  estático -->
 	<div class="w3-hide-small w3-hide-medium">
 		<div class="no-print" id="divGlobalFooter">
@@ -657,5 +658,10 @@ Sys.Application.add_init(function() {
 			</tbody>
 		</table> -->
 </form>
+
+<!-- Buscador -->
+	<div id="google_search_bar" style="visibility:hidden" ><gcse:search ></gcse:search></div> 
+	<input type="text" name="buscador" id="buscador" class="buscador" autocomplete="off" >	
+<!-- Buscador -->
 	</body>
 </html>

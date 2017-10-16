@@ -101,32 +101,25 @@ h2, h3, h4
 
 
 div#divLogoGSHeader {
-    width: 15%;
     float: left;
 }
 
 div#divMenuSuperior {
-    width: 38%;
     float: right;
-    padding-top: 20px;
+    padding-top: 30px;
 }
-@media only screen and (min-width: 768px){
-div#divMenuSuperior {
-        width: 53%;
-    float: right;
-    padding: 27px 0px 20px 0px;
-}
+
 div#divMenuSuperior div {
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
-#divMenuSuperior
+/*#divMenuSuperior
 {
     width: 60%;
     height: 55px;
     float: right;
     position: relative;
 }
-
+*/
 .clear
 {
     clear: both;
