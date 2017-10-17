@@ -167,7 +167,13 @@ table a:hover {
 }
 
 .Rot1 [data-label="Línea"]{
-    color: #409002;;
+    color: #409002;
+}
+@media screen and (max-width: 480px) {
+    .Rot1 [data-label="Línea"]{
+        color: #409002;
+        border-bottom: 3px solid;
+    }
 }
 /* Estilos para tablas SERIGRAFIA*/
 .Ser{
@@ -214,6 +220,13 @@ table a:hover {
 
 .Ser [data-label="Descripción"]{
     color:#b30505;
+}
+
+@media screen and (max-width: 480px) {
+    .Ser [data-label="Descripción"]{
+    color:#b30505;
+    border-bottom: 3px solid;
+    }
 }
 /* Estilos para tablas Quimica Varn*/
 img.tablaQ {
@@ -291,7 +304,6 @@ img.tablaQ {
 
 .QuiV [data-label="Descripción"]{
         color: #053bb3;
-
 }
 
 @media screen and (max-width: 480px) {
@@ -340,18 +352,22 @@ img.tablaQ {
 }
 
 @media screen and (max-width: 480px) {
-.QuiVR{
-    width:100%;
-    margin: 5px;
-    text-align: left;
-    line-height: 2.3;
-    font-size: .9em;
-    padding: 10px
-}
-.QuiVR ol {
-   padding: 15px;
-   text-align: justify;
-}
+    .QuiVR{
+        width:100%;
+        margin: 5px;
+        text-align: left;
+        line-height: 2.3;
+        font-size: .9em;
+        padding: 10px
+    }
+    .QuiVR ol {
+       padding: 15px;
+       text-align: justify;
+    }
+    .QuiV [data-label="Descripción"]{
+            color: #053bb3;
+            border-bottom: 3px solid;
+    }
 }
 
 
@@ -439,11 +455,16 @@ footer{
             cursor: pointer;
             list-style: none;
             list-style-image: none;
+            width: 105px;
+            text-align: left;
     }
     footer li {
     list-style: none;
     text-align: left;
     padding-left: 15px;
+    }
+    ul.submenu li {
+    padding: 0px;
     }
     footer div li a {
     font-size: .7em;
@@ -487,8 +508,8 @@ footer.w3-row.boxfooter div {
 }
 
 div#divMenuSuperior {
-				width:50% !important;
-				    padding-top: 30px;
+				width:65% !important;
+				padding-top: 30px;
 				}
 				
 
@@ -545,7 +566,7 @@ form .gsc-search-box.gsc-search-box-tools{
   border:0px;
   border-radius: 4px;
   font-size: 16px;
- background-color: white;
+ background-color: transparent;
   background-image: url('../img/lupa azul.png');
   background-size:30px;
   background-position: 10px 10px;
@@ -572,7 +593,7 @@ form .gsc-search-box.gsc-search-box-tools{
 
 @media only screen and (min-width: 768px){
 div#divMenuSuperior div {
-    padding: 0px 30px;
+    padding: 0px 20px;
 	}
 	
 }
