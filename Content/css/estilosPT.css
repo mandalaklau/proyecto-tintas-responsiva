@@ -173,6 +173,7 @@ table a:hover {
     .Rot1 [data-label="Línea"]{
         color: #409002;
         border-bottom: 3px solid;
+        font-weight: bold;
     }
 }
 /* Estilos para tablas SERIGRAFIA*/
@@ -226,6 +227,12 @@ table a:hover {
     .Ser [data-label="Descripción"]{
     color:#b30505;
     border-bottom: 3px solid;
+    font-weight: bold;
+    }
+    .Ser [data-label="Producto"]{
+    color:#b30505;
+    border-bottom: 3px solid;
+    font-weight: bold;
     }
 }
 /* Estilos para tablas Quimica Varn*/
@@ -367,6 +374,7 @@ img.tablaQ {
     .QuiV [data-label="Descripción"]{
             color: #053bb3;
             border-bottom: 3px solid;
+            font-weight: bold;
     }
 }
 
